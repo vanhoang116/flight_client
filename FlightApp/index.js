@@ -3,7 +3,9 @@
  */
 
 import {AppRegistry} from 'react-native';
-import App from './App';
+import ReduxApp from './redux/index'
 import {name as appName} from './app.json';
+import 'react-native-gesture-handler';
+import './ignoreWarnings.ts'
 
-AppRegistry.registerComponent(appName, () => App);
+AppRegistry.registerComponent(appName, () => ReduxApp);
